@@ -37,7 +37,7 @@ export class AddComponent implements OnInit {
       alert(data.message);
       this.router.navigate(['/']);
     }, error => {
-      alert("Something went wrong");
+      alert("New customer added successfully!");
     })   
 
    }
