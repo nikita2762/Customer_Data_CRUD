@@ -1,0 +1,45 @@
+<h2 style="text-align:center; color:rgb(14, 14, 0); font-size: 30px; background: rgb(239, 228, 9)">Update Customer data</h2>
+<!-- In the head section of your HTML file -->
+<link rel="stylesheet" type="text/css" href="/edit.component.css">
+
+<div class="container-fluid d-flex align-items-center justify-content-center" style="height: 80vh;">
+    <form [formGroup]="updateCustomer" (ngSubmit)="onSubmit(updateCustomer)">    
+      <div class="row mb-3">
+        <div class="col-12">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+            <mat-label>Customer Name</mat-label>
+            <input matInput type="name" formControlName="name"  placeholder="Enter Customer name">
+          </mat-form-field>
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-12">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="number" formControlName="contact"  placeholder="Enter your phone number">
+          </mat-form-field>
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-12">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+            <mat-label>Enter Email</mat-label>
+            <input matInput type="email" formControlName="email"  placeholder="Please enter your email">
+          </mat-form-field>
+        </div>
+      </div>  
+   
+  
+      <div class="row mb-3">
+        <div class="col-12">
+          <div style="text-align:center;">
+            <button [disabled]="updateCustomer.invalid" type="submit" class="btn btn-warning margin-left">UPDATE</button>&nbsp;
+            <button [routerLink]="['/view']" class="button btn btn-danger margin-left">BACK</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

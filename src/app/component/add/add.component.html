@@ -1,0 +1,56 @@
+<h2 style="text-align:center; color:rgb(14, 14, 0); font-size: 30px; background: rgb(239, 228, 9)">Add new Customer</h2>
+<hr>
+
+<div class="container">
+    <form class="text-center" [formGroup]="createCustomer" (ngSubmit)="onSubmit(createCustomer)">
+        <!-- Customer ID -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-12">
+                <mat-form-field [style.width.px]="357" class="example-full-width" appearance="outline">
+                    <mat-label>Customer ID</mat-label>
+                    <input matInput type="number" name="eid" [(ngModel)]="empy.eid" placeholder="Enter customer ID">
+                </mat-form-field>
+            </div>
+        </div> -->
+
+        <!-- Customer Name -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <mat-form-field [style.width.px]="357" class="example-full-width" appearance="outline">
+                    <mat-label>Customer Name</mat-label>
+                    <input matInput type="name" formControlName="name" placeholder="Enter customer name">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <mat-form-field [style.width.px]="357" class="example-full-width" appearance="outline">
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput type="number" formControlName="contact" placeholder="Enter your phone number">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <mat-form-field [style.width.px]="357" class="example-full-width" appearance="outline">
+                    <mat-label>Enter Email</mat-label>
+                    <input matInput type="email" formControlName="email" placeholder="Please enter your email">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="row justify-content-center">
+            
+        </div>
+
+        <!-- Buttons -->
+        <div style="margin-top: 20px;">
+            <button [disabled]="createCustomer.invalid" type="submit" class="btn btn-primary margin-left">ADD</button>
+        </div>
+    </form>
+</div>

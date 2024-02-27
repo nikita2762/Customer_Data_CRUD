@@ -1,0 +1,49 @@
+
+<h2 style="text-align:center; color:rgb(14, 14, 0); font-size: 30px; background: rgb(239, 228, 9)">View Customer details</h2>
+
+<div class="container-fluid"> 
+<table class="table mt-4 table-striped table-bordered ">
+    <thead>
+      <tr>
+        <th scope="col">Cid</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of  myemployee">
+        <th >{{user.id}}</th>
+        <th >{{user.name}}</th>
+        <!-- <th >{{user.position}}</th> -->
+        <!-- <th >{{user.gender}}</th> -->
+        <th >{{user.email}}</th>
+        <!-- <th >{{user.address}}</th> -->
+        <th >{{user.contact}}</th>
+        <!-- <th >{{user.salary}}</th> -->
+        <td>
+          <!-- <i routerLink="/watch/view/{{user.id}}" class="fa fa-eye"style="color:orange ;" aria-hidden="true"></i>&nbsp; -->
+            <i (click)="updateuser(user)" routerLink="/edit/update/{{user.id}}" style="color:blue;"class="fa fa-edit"></i> &nbsp;
+            <i (click)="deleteuser(user)" style="color:red;"class="fa fa-trash"></i>
+
+        </td>
+      </tr>
+     
+     
+    </tbody>
+  </table>
+</div>
+ 
+
+<!---spinner-->
+<div *ngIf="!loading"> 
+  <h1 class="text-center text-primary mt-3">Please do wait data is been loading!!!</h1>
+   <app-spinner> </app-spinner>
+  </div>
+
+<div class="text-center mt-2">
+<button routerLink="/"  class="btn btn-dark">BACK</button>
+ </div>
+
+

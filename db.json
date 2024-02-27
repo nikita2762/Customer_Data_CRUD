@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "eid": 12546,
+      "name": "jayesh",
+      "mobile": 9658698546,
+      "email": "jayesh@gmail.com",
+      "address": "pune",
+      "id": 1
+    },
+    {
+      "eid": 36565,
+      "name": "max",
+      "mobile": 2565665566,
+      "email": "max@gmail.com",
+      "address": "daman",
+      "id": 2
+    },
+    {
+      "eid": 69656,
+      "name": "siya",
+      "mobile": 9656565656,
+      "email": "sia@gmail.com",
+      "address": "delhi",
+      "id": 3
+    },
+    {
+      "eid": 45966,
+      "name": "ritesh",
+      "mobile": 6565256565,
+      "email": "ritesh@gmail.com",
+      "address": "jaipur",
+      "id": 4
+    },
+    {
+      "eid": 8545,
+      "name": "neha",
+      "mobile": 6363635656,
+      "email": "neha@gmail.com",
+      "address": "thane",
+      "id": 5
+    },
+    {
+      "eid": 66566,
+      "name": "ram",
+      "mobile": 6565654562,
+      "email": "ram@redifmail.com",
+      "address": "bangaluru",
+      "id": 6
+    },
+    {
+      "eid": 16566,
+      "name": "rajat",
+      "mobile": 4565654562,
+      "email": "rajat@redifmail.com",
+      "address": "bangaluru",
+      "id": 7
+    },
+    {
+      "eid": 19566,
+      "name": "sunil",
+      "mobile": 6565654562,
+      "email": "sunil44@redifmail.com",
+      "address": "panjim",
+      "id": 8
+    },
+    {
+      "eid": 4566,
+      "name": "nilesh",
+      "mobile": 8585865566,
+      "email": "nilesh@gmail.com",
+      "address": "karwar",
+      "id": 9
+    },
+    {
+      "eid": 858565,
+      "name": "parashuram",
+      "mobile": 56565565,
+      "email": "dsds@gmail.com",
+      "address": "karwar",
+      "id": 10
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

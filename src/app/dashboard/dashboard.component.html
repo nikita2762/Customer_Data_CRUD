@@ -1,0 +1,63 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 sidebar bg-dark text-light">
+      <h2 class="mt-4 mb-4">Customer Management </h2>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/view">
+            <i class="fas fa-users fa-fw"></i> Customer List
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/add">
+            <i class="fas fa-user-plus fa-fw"></i> Add Customer
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/admin-login">
+            <i class="fas fa-user-lock fa-fw"></i> Admin Login
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <!-- Main Content -->
+    <div class="col-md-9 content">
+      <h2 class="mt-4 mb-4">Welcome to the Customer Management Dashboard</h2>
+
+      <!-- Information Cards -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-info text-light">
+            <div class="card-body">
+              <h5 class="card-title">Total Customers</h5>
+              <p class="card-text">1500</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-success text-light">
+            <div class="card-body">
+              <h5 class="card-title">New Customers Today</h5>
+              <p class="card-text">30</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-warning text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Pending Requests</h5>
+              <p class="card-text">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more content sections as needed -->
+
+    </div>
+  </div>
+</div>
